@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ottawa</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <h1 id="header"><span class="red">OT</span><span class="wh">TA</span><span class="red">WA</span></h1>
+
+    <h3 id="opis">Stolica i czwarte pod względem wielkości miasto Kanady. <br> Położone we wschodniej części prowincji Ontario, na południowym brzegu rzeki Ottawa. <br> Aglomeracja stołeczna, z Gatineau na północnym brzegu Ottawy, ma <b>1 146 790</b> mieszkańców.</h3>
+
+    <!-- TODO: ZDJĘCIA PRZENOSZĄ DO ORYGINAŁÓW -->
+
+    <div class="container">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+            <a href="img/parlament_max.png"><img src="img/parlament.png" alt="Parlament"></a>
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <a href="img/flaga_max.png"><img src="img/flaga.png" alt="Flaga"></a>
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <a href="img/hall_max.png"><img src="img/hall.png" alt="Hall"></a>
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <a href="img/miasto_max.png"><img src="img/miasto.png" alt="Miasto"></a>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="img/parlament_min.png" onclick="currentSlide(1)" alt="Parlament">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img/flaga_min.png" onclick="currentSlide(2)" alt="Flaga">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img/hall_min.png" onclick="currentSlide(3)" alt="Dawna siedziba rządu">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="img/miasto_min.png" onclick="currentSlide(4)" alt="Ruch uliczny">
+          </div>
+        </div>
+      </div>
+
+      <div id="film">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/sdp6T_NvGCI"></iframe>
+      </div> <br>
+
+      <div id="audio">
+        <h3>Song for Ottawa - The Capital City</h3>
+
+        <audio controls>
+          <source src="media/ottawa.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+    <div id="baza">
+        <h1 id="header-baza">BAZA WIEDZY</h1>
+
+        <div id="galeria-baza">
+            <div class="article">
+                <a href="parlament.html"><img src="img/parlament_mid.png" alt="parlament"/></a>
+                <p class="label-baza">Historia i ciekawostki o głównym parlamencie Kanady</p>
+            </div>
+
+            <div class="article">
+                <a href="flaga.html"><img src="img/flaga_mid.png" alt="parlament"/></a>
+                <p class="label-baza">Historia flagi Kanady</p>
+            </div>
+
+            <div class="article">
+                <a href="hall.html"><img src="img/hall_mid.png" alt="parlament"/></a>
+                <p class="label-baza">Dzieje dawnej siedziby rządu lokalnego</p>
+            </div>
+
+            <div class="article">
+                <a href="miasto.html"><img src="img/miasto_mid.png" alt="parlament"/></a>
+                <p class="label-baza">Historia miasta</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="800" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ottaawa&t=&z=9&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+      </div>
+
+      <form id="form">
+        <h1 id="opinia">Podziel się swoją opinią</h1>
+
+        <label for="imie">Imię: </label> <br>
+        <input class="input-form" type="text" id="imie" maxlength="30"> <br> <br>
+
+        <label for="nazwisko">Nazwisko*: </label> <br>
+        <input class="input-form" type="password" id="nazwisko" maxlength="30"> <br> <br>
+
+        Płeć: 
+        <input type="radio" id="kobieta" name="plec" value="kobieta">
+        <label for="kobieta">Kobieta</label>
+
+        <input type="radio" id="me" name="plec" value="mężczyzna" checked>
+        <label for="me">Mężczyzna</label> <br> <br>
+
+        <label for="ocena">Opinia: </label> <br>
+        <textarea class="input-form" name="ocena" id="ocena" cols="30" rows="7"></textarea> <br> <br>
+
+        <input class="btn" type="reset" value="Wyczyść">
+        <input class="btn" type="submit" value="Wyślij"> <br> <br>
+
+        <p style="font-size: 11pt;">* - Twoje nazwisko nie zostanie opublikowane</p>
+
+      </form>
+
+    </div>
+
+</body>
+</html>
